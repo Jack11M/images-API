@@ -16,6 +16,10 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <swagger.version>3.0.0</swagger.version>
+        <org.json.version>20201115</org.json.version>
+        <model.mapper.version>2.3.8</model.mapper.version>
+        <javax.validation.version>2.0.1.Final</javax.validation.version>
     </properties>
 
     <dependencies>
@@ -47,6 +51,26 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-boot-starter</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>${javax.validation.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>${model.mapper.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>${org.json.version}</version>
         </dependency>
     </dependencies>
 
